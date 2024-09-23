@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		23CDECC12CA159BF00A755B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDECC02CA159BF00A755B6 /* AppDelegate.swift */; };
-		23CDECC32CA159BF00A755B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDECC22CA159BF00A755B6 /* SceneDelegate.swift */; };
-		23CDECC52CA159BF00A755B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDECC42CA159BF00A755B6 /* ViewController.swift */; };
-		23CDECC82CA159BF00A755B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CDECC62CA159BF00A755B6 /* Main.storyboard */; };
 		23CDECCA2CA159C000A755B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CDECC92CA159C000A755B6 /* Assets.xcassets */; };
 		23CDECCD2CA159C000A755B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CDECCB2CA159C000A755B6 /* LaunchScreen.storyboard */; };
+		23CDECD62CA15AD700A755B6 /* DragDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDECD52CA15AD700A755B6 /* DragDropViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23CDECBD2CA159BF00A755B6 /* DragDropCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragDropCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CDECC02CA159BF00A755B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23CDECC22CA159BF00A755B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23CDECC42CA159BF00A755B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23CDECC72CA159BF00A755B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23CDECC92CA159C000A755B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CDECCC2CA159C000A755B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23CDECCE2CA159C000A755B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CDECD52CA15AD700A755B6 /* DragDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				23CDECC02CA159BF00A755B6 /* AppDelegate.swift */,
-				23CDECC22CA159BF00A755B6 /* SceneDelegate.swift */,
-				23CDECC42CA159BF00A755B6 /* ViewController.swift */,
-				23CDECC62CA159BF00A755B6 /* Main.storyboard */,
+				23CDECD52CA15AD700A755B6 /* DragDropViewController.swift */,
 				23CDECC92CA159C000A755B6 /* Assets.xcassets */,
 				23CDECCB2CA159C000A755B6 /* LaunchScreen.storyboard */,
 				23CDECCE2CA159C000A755B6 /* Info.plist */,
@@ -111,6 +105,9 @@
 				Base,
 			);
 			mainGroup = 23CDECB42CA159BF00A755B6;
+			packageReferences = (
+				23CDECD42CA15ACB00A755B6 /* XCRemoteSwiftPackageReference "Stevia" */,
+			);
 			productRefGroup = 23CDECBE2CA159BF00A755B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +124,6 @@
 			files = (
 				23CDECCD2CA159C000A755B6 /* LaunchScreen.storyboard in Resources */,
 				23CDECCA2CA159C000A755B6 /* Assets.xcassets in Resources */,
-				23CDECC82CA159BF00A755B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +134,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CDECC52CA159BF00A755B6 /* ViewController.swift in Sources */,
 				23CDECC12CA159BF00A755B6 /* AppDelegate.swift in Sources */,
-				23CDECC32CA159BF00A755B6 /* SceneDelegate.swift in Sources */,
+				23CDECD62CA15AD700A755B6 /* DragDropViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23CDECC62CA159BF00A755B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23CDECC72CA159BF00A755B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23CDECCB2CA159C000A755B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +284,7 @@
 				INFOPLIST_FILE = DragDropCollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +312,7 @@
 				INFOPLIST_FILE = DragDropCollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +350,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23CDECD42CA15ACB00A755B6 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 23CDECB52CA159BF00A755B6 /* Project object */;
 }
